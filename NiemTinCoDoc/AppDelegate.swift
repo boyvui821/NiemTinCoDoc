@@ -7,16 +7,60 @@
 //
 
 import UIKit
+import UserNotifications
+import GoogleMobileAds
+import FBSDKCoreKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate   {
 
     var window: UIWindow?
-
+    
+    //Notification
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.alert, .sound]);
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        if response.notification.request.identifier == "testNotification"{
+            print("Handle notification");
+        }
+        completionHandler();
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UNUserNotificationCenter.current().delegate = self;
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: .alert) { (granted, error) in
+            print("Granted: \(granted)");
+            
+        }
+        //ID Test ADMOB
+        //GADMobileAds.configure(withApplicationID: "ca-app-pub-3940256099942544/4411468910");
+        
+        //ID ADS ADMOB
+        GADMobileAds.configure(withApplicationID: "ca-app-pub-3167518105754283~8813093826");
+        
+        //Facebook
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         return true
+    }
+    
+    func ScheduleNotification(){
+        print("--------------scheduleNotification-----------------")
+        let notificationContent = UNMutableNotificationContent();
+        notificationContent.title = "Hãy cảm tạ Chúa vì một buổi sớm mai";
+        notificationContent.body = "Và bắt đầu một ngày mới với một đức tin thật vững vàng";
+        notificationContent.sound = UNNotificationSound.default();
+        
+        var component = DateComponents();
+        component.hour = 6;
+        component.minute = 30;
+        let trigger = UNCalendarNotificationTrigger(dateMatching: component, repeats: true);
+        
+        let request = UNNotificationRequest(identifier: "testNotification", content: notificationContent, trigger: trigger);
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil);
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -35,6 +79,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        FBSDKAppEvents.activateApp();
     }
 
     func applicationWillTerminate(_ application: UIApplication) {

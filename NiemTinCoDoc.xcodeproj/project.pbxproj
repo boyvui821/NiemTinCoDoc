@@ -12,7 +12,152 @@
 		D201BBEA207BD04E001DF0B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D201BBE8207BD04E001DF0B6 /* Main.storyboard */; };
 		D201BBEC207BD04E001DF0B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D201BBEB207BD04E001DF0B6 /* Assets.xcassets */; };
 		D201BBEF207BD04E001DF0B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D201BBED207BD04E001DF0B6 /* LaunchScreen.storyboard */; };
+		D201BC0F207BD107001DF0B6 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D201BC01207BD0CB001DF0B6 /* SQLite.framework */; };
+		D201BC10207BD127001DF0B6 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D201BC01207BD0CB001DF0B6 /* SQLite.framework */; };
+		D201BC11207BD127001DF0B6 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D201BC01207BD0CB001DF0B6 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D21E514B207DD78200CABDF3 /* FaithInGodSplashScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D21E514A207DD78200CABDF3 /* FaithInGodSplashScreen.jpg */; };
+		D21E5153207DDF0500CABDF3 /* JesusLive.png in Resources */ = {isa = PBXBuildFile; fileRef = D21E5152207DDF0500CABDF3 /* JesusLive.png */; };
+		D21E5155207DDFCC00CABDF3 /* FaithStoryContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21E5154207DDFCC00CABDF3 /* FaithStoryContentController.swift */; };
+		D22F221A20936A3D00DB6660 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22F221120936A3C00DB6660 /* FBSDKCoreKit.framework */; };
+		D22F221C20936A4F00DB6660 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22F221B20936A4F00DB6660 /* Bolts.framework */; };
+		D22F221E20936A6300DB6660 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22F221D20936A6300DB6660 /* FBSDKShareKit.framework */; };
+		D22F223120939AA800DB6660 /* BibleImage.png in Resources */ = {isa = PBXBuildFile; fileRef = D22F223020939AA700DB6660 /* BibleImage.png */; };
+		D22F22332093A40A00DB6660 /* InfoIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D22F22322093A40A00DB6660 /* InfoIcon.png */; };
+		D22F22352093A4E700DB6660 /* FacebookIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D22F22342093A4E600DB6660 /* FacebookIcon.png */; };
+		D22FA8F62085E5E0005FF7C9 /* Icon-App-72x72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22FA8E02085E5DE005FF7C9 /* Icon-App-72x72@2x.png */; };
+		D22FA8F72085E5E0005FF7C9 /* Icon-App-20x20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22FA8E12085E5DE005FF7C9 /* Icon-App-20x20@3x.png */; };
+		D22FA8F82085E5E0005FF7C9 /* Icon-App-72x72@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22FA8E22085E5DE005FF7C9 /* Icon-App-72x72@1x.png */; };
+		D22FA8F92085E5E0005FF7C9 /* Icon-App-60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22FA8E32085E5DE005FF7C9 /* Icon-App-60x60@3x.png */; };
+		D22FA8FA2085E5E0005FF7C9 /* Icon-App-76x76@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22FA8E42085E5DE005FF7C9 /* Icon-App-76x76@1x.png */; };
+		D22FA8FB2085E5E0005FF7C9 /* Icon-App-60x60@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22FA8E52085E5DE005FF7C9 /* Icon-App-60x60@1x.png */; };
+		D22FA8FC2085E5E0005FF7C9 /* Icon-App-20x20@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22FA8E62085E5DE005FF7C9 /* Icon-App-20x20@1x.png */; };
+		D22FA8FD2085E5E0005FF7C9 /* Icon-App-76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22FA8E72085E5DE005FF7C9 /* Icon-App-76x76@2x.png */; };
+		D22FA8FE2085E5E0005FF7C9 /* Icon-App-40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22FA8E82085E5DE005FF7C9 /* Icon-App-40x40@2x.png */; };
+		D22FA8FF2085E5E0005FF7C9 /* Icon-App-40x40@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22FA8E92085E5DE005FF7C9 /* Icon-App-40x40@1x.png */; };
+		D22FA9002085E5E0005FF7C9 /* Icon-App-29x29@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22FA8EA2085E5DF005FF7C9 /* Icon-App-29x29@1x.png */; };
+		D22FA9012085E5E0005FF7C9 /* Icon-App-29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22FA8EB2085E5DF005FF7C9 /* Icon-App-29x29@3x.png */; };
+		D22FA9022085E5E0005FF7C9 /* Icon-App-20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22FA8EC2085E5DF005FF7C9 /* Icon-App-20x20@2x.png */; };
+		D22FA9032085E5E0005FF7C9 /* Icon-App-29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22FA8ED2085E5DF005FF7C9 /* Icon-App-29x29@2x.png */; };
+		D22FA9042085E5E0005FF7C9 /* Icon-App-76x76@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22FA8EE2085E5DF005FF7C9 /* Icon-App-76x76@3x.png */; };
+		D22FA9052085E5E0005FF7C9 /* Icon-Small-50x50@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22FA8EF2085E5DF005FF7C9 /* Icon-Small-50x50@1x.png */; };
+		D22FA9062085E5E0005FF7C9 /* Icon-App-40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22FA8F02085E5DF005FF7C9 /* Icon-App-40x40@3x.png */; };
+		D22FA9072085E5E0005FF7C9 /* Icon-App-57x57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22FA8F12085E5DF005FF7C9 /* Icon-App-57x57@2x.png */; };
+		D22FA9082085E5E0005FF7C9 /* Icon-App-57x57@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22FA8F22085E5DF005FF7C9 /* Icon-App-57x57@1x.png */; };
+		D22FA9092085E5E0005FF7C9 /* Icon-App-60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22FA8F32085E5DF005FF7C9 /* Icon-App-60x60@2x.png */; };
+		D22FA90A2085E5E0005FF7C9 /* Icon-App-83.5x83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22FA8F42085E5DF005FF7C9 /* Icon-App-83.5x83.5@2x.png */; };
+		D22FA90B2085E5E0005FF7C9 /* Icon-Small-50x50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22FA8F52085E5E0005FF7C9 /* Icon-Small-50x50@2x.png */; };
+		D22FA90F2085E6FB005FF7C9 /* ItunesArtwork@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22FA90E2085E6FB005FF7C9 /* ItunesArtwork@1x.png */; };
+		D2345AF0207F14C400657BD0 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2345AEF207F14C300657BD0 /* DesignableView.swift */; };
+		D2345AF4207F179000657BD0 /* PopInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2345AF3207F179000657BD0 /* PopInfoController.swift */; };
+		D241C620207E60F700F179C3 /* UVNDoiMoi.TTF in Resources */ = {isa = PBXBuildFile; fileRef = D241C619207E60EA00F179C3 /* UVNDoiMoi.TTF */; };
+		D241C622207E723000F179C3 /* FaithCross.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D241C621207E723000F179C3 /* FaithCross.jpg */; };
+		D241C665207E8CCF00F179C3 /* TransitionButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D241C662207E8C7300F179C3 /* TransitionButton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D241C669207E8E3400F179C3 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D241C668207E8E3400F179C3 /* CustomButton.swift */; };
+		D2484DA9207C654E008E76A2 /* NiemTinCoDocNhan.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = D201BC16207BF709001DF0B6 /* NiemTinCoDocNhan.sqlite3 */; };
+		D2484DB2207C8A1F008E76A2 /* FaithStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2484DB1207C8A1F008E76A2 /* FaithStory.swift */; };
+		D2484DB5207C8EF1008E76A2 /* DatabaseSQLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2484DB4207C8EF1008E76A2 /* DatabaseSQLite.swift */; };
+		D2484DB7207C9306008E76A2 /* FaithStoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2484DB6207C9306008E76A2 /* FaithStoriesViewModel.swift */; };
+		D2484DBA207CA54A008E76A2 /* TableFaithStoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2484DB9207CA54A008E76A2 /* TableFaithStoryController.swift */; };
+		D2484DBE207CA918008E76A2 /* faith.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2484DBD207CA918008E76A2 /* faith.jpg */; };
+		D25ADC4E20844944001CCC8E /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25ADC4520844944001CCC8E /* GoogleMobileAds.framework */; };
+		D26415412092D03C00C4073E /* MenuIcon_Collapse.png in Resources */ = {isa = PBXBuildFile; fileRef = D264153F2092D03B00C4073E /* MenuIcon_Collapse.png */; };
+		D26415422092D03C00C4073E /* MenuIcon_Expand.png in Resources */ = {isa = PBXBuildFile; fileRef = D26415402092D03C00C4073E /* MenuIcon_Expand.png */; };
+		D26415462092D2FA00C4073E /* ReadBook.png in Resources */ = {isa = PBXBuildFile; fileRef = D26415452092D2FA00C4073E /* ReadBook.png */; };
+		D277E41E207D27EB005514B1 /* StoryTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D277E41D207D27EB005514B1 /* StoryTVCell.swift */; };
+		D277E422207D2E84005514B1 /* GodBlood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D277E421207D2E84005514B1 /* GodBlood.jpg */; };
+		D277E42A207D3789005514B1 /* UVNHoaDao.TTF in Resources */ = {isa = PBXBuildFile; fileRef = D277E429207D377D005514B1 /* UVNHoaDao.TTF */; };
+		D277E42C207D386C005514B1 /* UVNMangTre.TTF in Resources */ = {isa = PBXBuildFile; fileRef = D277E42B207D3857005514B1 /* UVNMangTre.TTF */; };
+		D277E42E207D38E7005514B1 /* UVNThangVu.TTF in Resources */ = {isa = PBXBuildFile; fileRef = D277E42D207D38E1005514B1 /* UVNThangVu.TTF */; };
+		D2F617EB208060540076928E /* BackImage.png in Resources */ = {isa = PBXBuildFile; fileRef = D2F617E2208060540076928E /* BackImage.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D201BC00207BD0CB001DF0B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D201BBF6207BD0CB001DF0B6 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		D201BC02207BD0CB001DF0B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D201BBF6207BD0CB001DF0B6 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+		D201BC04207BD0CB001DF0B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D201BBF6207BD0CB001DF0B6 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		D201BC06207BD0CB001DF0B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D201BBF6207BD0CB001DF0B6 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+		D201BC08207BD0CB001DF0B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D201BBF6207BD0CB001DF0B6 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+		D201BC0A207BD0CB001DF0B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D201BBF6207BD0CB001DF0B6 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+		D201BC0C207BD0CB001DF0B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D201BBF6207BD0CB001DF0B6 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
+		};
+		D201BC12207BD127001DF0B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D201BBF6207BD0CB001DF0B6 /* SQLite.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE247AD21C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		D241C661207E8C7300F179C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D241C656207E8C7200F179C3 /* TransitionButton.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D93F1C981EAEDB6E009A7474;
+			remoteInfo = TransitionButton;
+		};
+		D241C663207E8C7300F179C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D241C656207E8C7200F179C3 /* TransitionButton.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D93F1CA11EAEDB6E009A7474;
+			remoteInfo = TransitionButtonTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D201BC14207BD127001DF0B6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D241C665207E8CCF00F179C3 /* TransitionButton.framework in Embed Frameworks */,
+				D201BC11207BD127001DF0B6 /* SQLite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D201BBE1207BD04E001DF0B6 /* NiemTinCoDoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NiemTinCoDoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +167,61 @@
 		D201BBEB207BD04E001DF0B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D201BBEE207BD04E001DF0B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D201BBF0207BD04E001DF0B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D201BBF6207BD0CB001DF0B6 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../../../Users/nguyenhieutrung/Downloads/SQLite.swift-master 2/SQLite.xcodeproj"; sourceTree = "<group>"; };
+		D201BC16207BF709001DF0B6 /* NiemTinCoDocNhan.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = NiemTinCoDocNhan.sqlite3; sourceTree = "<group>"; };
+		D21E514A207DD78200CABDF3 /* FaithInGodSplashScreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FaithInGodSplashScreen.jpg; sourceTree = "<group>"; };
+		D21E5152207DDF0500CABDF3 /* JesusLive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JesusLive.png; sourceTree = "<group>"; };
+		D21E5154207DDFCC00CABDF3 /* FaithStoryContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaithStoryContentController.swift; sourceTree = "<group>"; };
+		D22F221120936A3C00DB6660 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		D22F221B20936A4F00DB6660 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		D22F221D20936A6300DB6660 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		D22F223020939AA700DB6660 /* BibleImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BibleImage.png; sourceTree = "<group>"; };
+		D22F22322093A40A00DB6660 /* InfoIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InfoIcon.png; sourceTree = "<group>"; };
+		D22F22342093A4E600DB6660 /* FacebookIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FacebookIcon.png; sourceTree = "<group>"; };
+		D22FA8E02085E5DE005FF7C9 /* Icon-App-72x72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-72x72@2x.png"; sourceTree = "<group>"; };
+		D22FA8E12085E5DE005FF7C9 /* Icon-App-20x20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@3x.png"; sourceTree = "<group>"; };
+		D22FA8E22085E5DE005FF7C9 /* Icon-App-72x72@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-72x72@1x.png"; sourceTree = "<group>"; };
+		D22FA8E32085E5DE005FF7C9 /* Icon-App-60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@3x.png"; sourceTree = "<group>"; };
+		D22FA8E42085E5DE005FF7C9 /* Icon-App-76x76@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@1x.png"; sourceTree = "<group>"; };
+		D22FA8E52085E5DE005FF7C9 /* Icon-App-60x60@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@1x.png"; sourceTree = "<group>"; };
+		D22FA8E62085E5DE005FF7C9 /* Icon-App-20x20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@1x.png"; sourceTree = "<group>"; };
+		D22FA8E72085E5DE005FF7C9 /* Icon-App-76x76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@2x.png"; sourceTree = "<group>"; };
+		D22FA8E82085E5DE005FF7C9 /* Icon-App-40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@2x.png"; sourceTree = "<group>"; };
+		D22FA8E92085E5DE005FF7C9 /* Icon-App-40x40@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@1x.png"; sourceTree = "<group>"; };
+		D22FA8EA2085E5DF005FF7C9 /* Icon-App-29x29@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@1x.png"; sourceTree = "<group>"; };
+		D22FA8EB2085E5DF005FF7C9 /* Icon-App-29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@3x.png"; sourceTree = "<group>"; };
+		D22FA8EC2085E5DF005FF7C9 /* Icon-App-20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@2x.png"; sourceTree = "<group>"; };
+		D22FA8ED2085E5DF005FF7C9 /* Icon-App-29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@2x.png"; sourceTree = "<group>"; };
+		D22FA8EE2085E5DF005FF7C9 /* Icon-App-76x76@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@3x.png"; sourceTree = "<group>"; };
+		D22FA8EF2085E5DF005FF7C9 /* Icon-Small-50x50@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50x50@1x.png"; sourceTree = "<group>"; };
+		D22FA8F02085E5DF005FF7C9 /* Icon-App-40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@3x.png"; sourceTree = "<group>"; };
+		D22FA8F12085E5DF005FF7C9 /* Icon-App-57x57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-57x57@2x.png"; sourceTree = "<group>"; };
+		D22FA8F22085E5DF005FF7C9 /* Icon-App-57x57@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-57x57@1x.png"; sourceTree = "<group>"; };
+		D22FA8F32085E5DF005FF7C9 /* Icon-App-60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@2x.png"; sourceTree = "<group>"; };
+		D22FA8F42085E5DF005FF7C9 /* Icon-App-83.5x83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-83.5x83.5@2x.png"; sourceTree = "<group>"; };
+		D22FA8F52085E5E0005FF7C9 /* Icon-Small-50x50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50x50@2x.png"; sourceTree = "<group>"; };
+		D22FA90E2085E6FB005FF7C9 /* ItunesArtwork@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ItunesArtwork@1x.png"; sourceTree = "<group>"; };
+		D2345AEF207F14C300657BD0 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		D2345AF3207F179000657BD0 /* PopInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopInfoController.swift; sourceTree = "<group>"; };
+		D241C619207E60EA00F179C3 /* UVNDoiMoi.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = UVNDoiMoi.TTF; sourceTree = "<group>"; };
+		D241C621207E723000F179C3 /* FaithCross.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FaithCross.jpg; sourceTree = "<group>"; };
+		D241C656207E8C7200F179C3 /* TransitionButton.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TransitionButton.xcodeproj; path = "../../../../Users/nguyenhieutrung/Downloads/TransitionButton-master/TransitionButton.xcodeproj"; sourceTree = "<group>"; };
+		D241C668207E8E3400F179C3 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		D2484DB1207C8A1F008E76A2 /* FaithStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaithStory.swift; sourceTree = "<group>"; };
+		D2484DB4207C8EF1008E76A2 /* DatabaseSQLite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseSQLite.swift; sourceTree = "<group>"; };
+		D2484DB6207C9306008E76A2 /* FaithStoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaithStoriesViewModel.swift; sourceTree = "<group>"; };
+		D2484DB9207CA54A008E76A2 /* TableFaithStoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableFaithStoryController.swift; sourceTree = "<group>"; };
+		D2484DBD207CA918008E76A2 /* faith.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = faith.jpg; sourceTree = "<group>"; };
+		D25ADC4520844944001CCC8E /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		D264153F2092D03B00C4073E /* MenuIcon_Collapse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MenuIcon_Collapse.png; sourceTree = "<group>"; };
+		D26415402092D03C00C4073E /* MenuIcon_Expand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MenuIcon_Expand.png; sourceTree = "<group>"; };
+		D26415452092D2FA00C4073E /* ReadBook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ReadBook.png; sourceTree = "<group>"; };
+		D277E41D207D27EB005514B1 /* StoryTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTVCell.swift; sourceTree = "<group>"; };
+		D277E421207D2E84005514B1 /* GodBlood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GodBlood.jpg; sourceTree = "<group>"; };
+		D277E429207D377D005514B1 /* UVNHoaDao.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = UVNHoaDao.TTF; sourceTree = "<group>"; };
+		D277E42B207D3857005514B1 /* UVNMangTre.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = UVNMangTre.TTF; sourceTree = "<group>"; };
+		D277E42D207D38E1005514B1 /* UVNThangVu.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = UVNThangVu.TTF; sourceTree = "<group>"; };
+		D2F617E2208060540076928E /* BackImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackImage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +229,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D22F221C20936A4F00DB6660 /* Bolts.framework in Frameworks */,
+				D25ADC4E20844944001CCC8E /* GoogleMobileAds.framework in Frameworks */,
+				D22F221E20936A6300DB6660 /* FBSDKShareKit.framework in Frameworks */,
+				D22F221A20936A3D00DB6660 /* FBSDKCoreKit.framework in Frameworks */,
+				D201BC10207BD127001DF0B6 /* SQLite.framework in Frameworks */,
+				D201BC0F207BD107001DF0B6 /* SQLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +246,12 @@
 			children = (
 				D201BBE3207BD04E001DF0B6 /* NiemTinCoDoc */,
 				D201BBE2207BD04E001DF0B6 /* Products */,
+				D22F221D20936A6300DB6660 /* FBSDKShareKit.framework */,
+				D22F221B20936A4F00DB6660 /* Bolts.framework */,
+				D22F221120936A3C00DB6660 /* FBSDKCoreKit.framework */,
+				D201BBF6207BD0CB001DF0B6 /* SQLite.xcodeproj */,
+				D241C656207E8C7200F179C3 /* TransitionButton.xcodeproj */,
+				D201BC0E207BD107001DF0B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +266,142 @@
 		D201BBE3207BD04E001DF0B6 /* NiemTinCoDoc */ = {
 			isa = PBXGroup;
 			children = (
+				D28AE06920849A5500DED245 /* AppIcon */,
+				D2F617EC2080605D0076928E /* Resource */,
+				D2345AE2207F0E8F00657BD0 /* View */,
+				D2484DB8207CA512008E76A2 /* Controller */,
+				D2484DB3207C8EC3008E76A2 /* DatabaseSQLite */,
+				D2484DB0207C89C4008E76A2 /* Model */,
 				D201BBE4207BD04E001DF0B6 /* AppDelegate.swift */,
-				D201BBE6207BD04E001DF0B6 /* ViewController.swift */,
+				D2345AEF207F14C300657BD0 /* DesignableView.swift */,
 				D201BBE8207BD04E001DF0B6 /* Main.storyboard */,
 				D201BBEB207BD04E001DF0B6 /* Assets.xcassets */,
 				D201BBED207BD04E001DF0B6 /* LaunchScreen.storyboard */,
 				D201BBF0207BD04E001DF0B6 /* Info.plist */,
+				D201BC16207BF709001DF0B6 /* NiemTinCoDocNhan.sqlite3 */,
+				D2484DBD207CA918008E76A2 /* faith.jpg */,
 			);
 			path = NiemTinCoDoc;
+			sourceTree = "<group>";
+		};
+		D201BBF7207BD0CB001DF0B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D201BC01207BD0CB001DF0B6 /* SQLite.framework */,
+				D201BC03207BD0CB001DF0B6 /* SQLiteTests iOS.xctest */,
+				D201BC05207BD0CB001DF0B6 /* SQLite.framework */,
+				D201BC07207BD0CB001DF0B6 /* SQLiteTests Mac.xctest */,
+				D201BC09207BD0CB001DF0B6 /* SQLite.framework */,
+				D201BC0B207BD0CB001DF0B6 /* SQLiteTests tvOS.xctest */,
+				D201BC0D207BD0CB001DF0B6 /* SQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D201BC0E207BD107001DF0B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D25ADC4520844944001CCC8E /* GoogleMobileAds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2345AE2207F0E8F00657BD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D241C657207E8C7200F179C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D241C662207E8C7300F179C3 /* TransitionButton.framework */,
+				D241C664207E8C7300F179C3 /* TransitionButtonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2484DB0207C89C4008E76A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2484DB1207C8A1F008E76A2 /* FaithStory.swift */,
+				D2484DB6207C9306008E76A2 /* FaithStoriesViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D2484DB3207C8EC3008E76A2 /* DatabaseSQLite */ = {
+			isa = PBXGroup;
+			children = (
+				D2484DB4207C8EF1008E76A2 /* DatabaseSQLite.swift */,
+			);
+			path = DatabaseSQLite;
+			sourceTree = "<group>";
+		};
+		D2484DB8207CA512008E76A2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D201BBE6207BD04E001DF0B6 /* ViewController.swift */,
+				D2484DB9207CA54A008E76A2 /* TableFaithStoryController.swift */,
+				D277E41D207D27EB005514B1 /* StoryTVCell.swift */,
+				D21E5154207DDFCC00CABDF3 /* FaithStoryContentController.swift */,
+				D241C668207E8E3400F179C3 /* CustomButton.swift */,
+				D2345AF3207F179000657BD0 /* PopInfoController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D28AE06920849A5500DED245 /* AppIcon */ = {
+			isa = PBXGroup;
+			children = (
+				D22FA90E2085E6FB005FF7C9 /* ItunesArtwork@1x.png */,
+				D22FA8E62085E5DE005FF7C9 /* Icon-App-20x20@1x.png */,
+				D22FA8EC2085E5DF005FF7C9 /* Icon-App-20x20@2x.png */,
+				D22FA8E12085E5DE005FF7C9 /* Icon-App-20x20@3x.png */,
+				D22FA8EA2085E5DF005FF7C9 /* Icon-App-29x29@1x.png */,
+				D22FA8ED2085E5DF005FF7C9 /* Icon-App-29x29@2x.png */,
+				D22FA8EB2085E5DF005FF7C9 /* Icon-App-29x29@3x.png */,
+				D22FA8E82085E5DE005FF7C9 /* Icon-App-40x40@2x.png */,
+				D22FA8E92085E5DE005FF7C9 /* Icon-App-40x40@1x.png */,
+				D22FA8F02085E5DF005FF7C9 /* Icon-App-40x40@3x.png */,
+				D22FA8F22085E5DF005FF7C9 /* Icon-App-57x57@1x.png */,
+				D22FA8F12085E5DF005FF7C9 /* Icon-App-57x57@2x.png */,
+				D22FA8E52085E5DE005FF7C9 /* Icon-App-60x60@1x.png */,
+				D22FA8F32085E5DF005FF7C9 /* Icon-App-60x60@2x.png */,
+				D22FA8E32085E5DE005FF7C9 /* Icon-App-60x60@3x.png */,
+				D22FA8E22085E5DE005FF7C9 /* Icon-App-72x72@1x.png */,
+				D22FA8E02085E5DE005FF7C9 /* Icon-App-72x72@2x.png */,
+				D22FA8E42085E5DE005FF7C9 /* Icon-App-76x76@1x.png */,
+				D22FA8E72085E5DE005FF7C9 /* Icon-App-76x76@2x.png */,
+				D22FA8EE2085E5DF005FF7C9 /* Icon-App-76x76@3x.png */,
+				D22FA8F42085E5DF005FF7C9 /* Icon-App-83.5x83.5@2x.png */,
+				D22FA8EF2085E5DF005FF7C9 /* Icon-Small-50x50@1x.png */,
+				D22FA8F52085E5E0005FF7C9 /* Icon-Small-50x50@2x.png */,
+			);
+			path = AppIcon;
+			sourceTree = "<group>";
+		};
+		D2F617EC2080605D0076928E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D22F22322093A40A00DB6660 /* InfoIcon.png */,
+				D22F223020939AA700DB6660 /* BibleImage.png */,
+				D22F22342093A4E600DB6660 /* FacebookIcon.png */,
+				D26415452092D2FA00C4073E /* ReadBook.png */,
+				D264153F2092D03B00C4073E /* MenuIcon_Collapse.png */,
+				D26415402092D03C00C4073E /* MenuIcon_Expand.png */,
+				D277E421207D2E84005514B1 /* GodBlood.jpg */,
+				D21E5152207DDF0500CABDF3 /* JesusLive.png */,
+				D241C621207E723000F179C3 /* FaithCross.jpg */,
+				D21E514A207DD78200CABDF3 /* FaithInGodSplashScreen.jpg */,
+				D2F617E2208060540076928E /* BackImage.png */,
+				D277E429207D377D005514B1 /* UVNHoaDao.TTF */,
+				D277E42B207D3857005514B1 /* UVNMangTre.TTF */,
+				D277E42D207D38E1005514B1 /* UVNThangVu.TTF */,
+				D241C619207E60EA00F179C3 /* UVNDoiMoi.TTF */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,10 +414,12 @@
 				D201BBDD207BD04E001DF0B6 /* Sources */,
 				D201BBDE207BD04E001DF0B6 /* Frameworks */,
 				D201BBDF207BD04E001DF0B6 /* Resources */,
+				D201BC14207BD127001DF0B6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D201BC13207BD127001DF0B6 /* PBXTargetDependency */,
 			);
 			name = NiemTinCoDoc;
 			productName = NiemTinCoDoc;
@@ -111,6 +453,16 @@
 			mainGroup = D201BBD8207BD04E001DF0B6;
 			productRefGroup = D201BBE2207BD04E001DF0B6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D201BBF7207BD0CB001DF0B6 /* Products */;
+					ProjectRef = D201BBF6207BD0CB001DF0B6 /* SQLite.xcodeproj */;
+				},
+				{
+					ProductGroup = D241C657207E8C7200F179C3 /* Products */;
+					ProjectRef = D241C656207E8C7200F179C3 /* TransitionButton.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D201BBE0207BD04E001DF0B6 /* NiemTinCoDoc */,
@@ -118,14 +470,120 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		D201BC01207BD0CB001DF0B6 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = D201BC00207BD0CB001DF0B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D201BC03207BD0CB001DF0B6 /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = D201BC02207BD0CB001DF0B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D201BC05207BD0CB001DF0B6 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = D201BC04207BD0CB001DF0B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D201BC07207BD0CB001DF0B6 /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = D201BC06207BD0CB001DF0B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D201BC09207BD0CB001DF0B6 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = D201BC08207BD0CB001DF0B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D201BC0B207BD0CB001DF0B6 /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = D201BC0A207BD0CB001DF0B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D201BC0D207BD0CB001DF0B6 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = D201BC0C207BD0CB001DF0B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D241C662207E8C7300F179C3 /* TransitionButton.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TransitionButton.framework;
+			remoteRef = D241C661207E8C7300F179C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D241C664207E8C7300F179C3 /* TransitionButtonTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TransitionButtonTests.xctest;
+			remoteRef = D241C663207E8C7300F179C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		D201BBDF207BD04E001DF0B6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D22FA8FF2085E5E0005FF7C9 /* Icon-App-40x40@1x.png in Resources */,
+				D22FA8FD2085E5E0005FF7C9 /* Icon-App-76x76@2x.png in Resources */,
+				D22FA8F62085E5E0005FF7C9 /* Icon-App-72x72@2x.png in Resources */,
+				D22FA8F82085E5E0005FF7C9 /* Icon-App-72x72@1x.png in Resources */,
+				D241C620207E60F700F179C3 /* UVNDoiMoi.TTF in Resources */,
+				D22FA90B2085E5E0005FF7C9 /* Icon-Small-50x50@2x.png in Resources */,
+				D22FA9052085E5E0005FF7C9 /* Icon-Small-50x50@1x.png in Resources */,
+				D241C622207E723000F179C3 /* FaithCross.jpg in Resources */,
+				D2F617EB208060540076928E /* BackImage.png in Resources */,
+				D22FA8FE2085E5E0005FF7C9 /* Icon-App-40x40@2x.png in Resources */,
+				D277E42E207D38E7005514B1 /* UVNThangVu.TTF in Resources */,
+				D22FA90A2085E5E0005FF7C9 /* Icon-App-83.5x83.5@2x.png in Resources */,
+				D21E514B207DD78200CABDF3 /* FaithInGodSplashScreen.jpg in Resources */,
+				D22FA8FA2085E5E0005FF7C9 /* Icon-App-76x76@1x.png in Resources */,
+				D277E42C207D386C005514B1 /* UVNMangTre.TTF in Resources */,
+				D22FA8FC2085E5E0005FF7C9 /* Icon-App-20x20@1x.png in Resources */,
+				D26415412092D03C00C4073E /* MenuIcon_Collapse.png in Resources */,
+				D22F223120939AA800DB6660 /* BibleImage.png in Resources */,
+				D22FA8FB2085E5E0005FF7C9 /* Icon-App-60x60@1x.png in Resources */,
+				D26415462092D2FA00C4073E /* ReadBook.png in Resources */,
+				D22FA8F92085E5E0005FF7C9 /* Icon-App-60x60@3x.png in Resources */,
+				D277E42A207D3789005514B1 /* UVNHoaDao.TTF in Resources */,
+				D2484DA9207C654E008E76A2 /* NiemTinCoDocNhan.sqlite3 in Resources */,
+				D22FA9042085E5E0005FF7C9 /* Icon-App-76x76@3x.png in Resources */,
+				D22FA9012085E5E0005FF7C9 /* Icon-App-29x29@3x.png in Resources */,
+				D22F22332093A40A00DB6660 /* InfoIcon.png in Resources */,
+				D22FA9002085E5E0005FF7C9 /* Icon-App-29x29@1x.png in Resources */,
+				D22FA9032085E5E0005FF7C9 /* Icon-App-29x29@2x.png in Resources */,
+				D22FA90F2085E6FB005FF7C9 /* ItunesArtwork@1x.png in Resources */,
 				D201BBEF207BD04E001DF0B6 /* LaunchScreen.storyboard in Resources */,
+				D22FA9072085E5E0005FF7C9 /* Icon-App-57x57@2x.png in Resources */,
+				D22FA9062085E5E0005FF7C9 /* Icon-App-40x40@3x.png in Resources */,
 				D201BBEC207BD04E001DF0B6 /* Assets.xcassets in Resources */,
+				D22FA9022085E5E0005FF7C9 /* Icon-App-20x20@2x.png in Resources */,
+				D2484DBE207CA918008E76A2 /* faith.jpg in Resources */,
+				D26415422092D03C00C4073E /* MenuIcon_Expand.png in Resources */,
+				D22FA9082085E5E0005FF7C9 /* Icon-App-57x57@1x.png in Resources */,
+				D277E422207D2E84005514B1 /* GodBlood.jpg in Resources */,
+				D22F22352093A4E700DB6660 /* FacebookIcon.png in Resources */,
+				D22FA9092085E5E0005FF7C9 /* Icon-App-60x60@2x.png in Resources */,
+				D21E5153207DDF0500CABDF3 /* JesusLive.png in Resources */,
 				D201BBEA207BD04E001DF0B6 /* Main.storyboard in Resources */,
+				D22FA8F72085E5E0005FF7C9 /* Icon-App-20x20@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,12 +594,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D21E5155207DDFCC00CABDF3 /* FaithStoryContentController.swift in Sources */,
+				D2484DB7207C9306008E76A2 /* FaithStoriesViewModel.swift in Sources */,
+				D2345AF4207F179000657BD0 /* PopInfoController.swift in Sources */,
+				D241C669207E8E3400F179C3 /* CustomButton.swift in Sources */,
+				D277E41E207D27EB005514B1 /* StoryTVCell.swift in Sources */,
 				D201BBE7207BD04E001DF0B6 /* ViewController.swift in Sources */,
+				D2484DB2207C8A1F008E76A2 /* FaithStory.swift in Sources */,
+				D2484DB5207C8EF1008E76A2 /* DatabaseSQLite.swift in Sources */,
 				D201BBE5207BD04E001DF0B6 /* AppDelegate.swift in Sources */,
+				D2345AF0207F14C400657BD0 /* DesignableView.swift in Sources */,
+				D2484DBA207CA54A008E76A2 /* TableFaithStoryController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D201BC13207BD127001DF0B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SQLite iOS";
+			targetProxy = D201BC12207BD127001DF0B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D201BBE8207BD04E001DF0B6 /* Main.storyboard */ = {
@@ -193,6 +668,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -273,11 +749,19 @@
 		D201BBF4207BD04E001DF0B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5279N8R9WZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = NiemTinCoDoc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.NHTSOFT.NiemTinCoDoc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NHTSOFT.NiemTinCoDoc2018;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -287,11 +771,19 @@
 		D201BBF5207BD04E001DF0B6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5279N8R9WZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = NiemTinCoDoc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.NHTSOFT.NiemTinCoDoc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NHTSOFT.NiemTinCoDoc2018;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

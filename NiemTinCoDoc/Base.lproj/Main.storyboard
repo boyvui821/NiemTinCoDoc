@@ -1,24 +1,538 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad10_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="UVNDoiMoi.TTF">
+            <string>UVNDoiMoi</string>
+        </array>
+        <array key="UVNThangVu.TTF">
+            <string>UVNThangVu</string>
+        </array>
+    </customFonts>
     <scenes>
+        <!--Pop Info Controller-->
+        <scene sceneID="Ee0-ro-BTo">
+            <objects>
+                <viewController id="845-9C-vVG" customClass="PopInfoController" customModule="NiemTinCoDoc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VsQ-81-W3P">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Olu-OW-HWy">
+                                <rect key="frame" x="0.0" y="20" width="834" height="1092"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gOe-X5-F5V">
+                                    <rect key="frame" x="0.0" y="0.0" width="834" height="1092"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGq-XT-ssB">
+                                            <rect key="frame" x="0.0" y="0.0" width="834" height="1092"/>
+                                            <state key="normal" title="Button"/>
+                                            <connections>
+                                                <action selector="PressButtonDimiss:" destination="845-9C-vVG" eventType="touchUpInside" id="fDF-kJ-tYp"/>
+                                            </connections>
+                                        </button>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hCV-AN-3jm" customClass="DesignableView" customModule="NiemTinCoDoc" customModuleProvider="target">
+                                            <rect key="frame" x="267" y="395.5" width="300" height="300"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vnz-BT-m4a" customClass="DesignableView" customModule="NiemTinCoDoc" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thông Tin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kro-vS-I8h">
+                                                            <rect key="frame" x="10" y="46.5" width="280" height="38.5"/>
+                                                            <fontDescription key="fontDescription" name="UVNThangVu" family="UVN Thang Vu" pointSize="33"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.65098039215686276" green="0.93333333333333335" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="kro-vS-I8h" firstAttribute="leading" secondItem="vnz-BT-m4a" secondAttribute="leading" constant="10" id="KKb-Iz-8tF"/>
+                                                        <constraint firstAttribute="bottom" secondItem="kro-vS-I8h" secondAttribute="bottom" constant="15" id="aTV-GV-5bD"/>
+                                                        <constraint firstAttribute="trailing" secondItem="kro-vS-I8h" secondAttribute="trailing" constant="10" id="cdR-0E-mUb"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="customRadius">
+                                                            <real key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kku-cI-cno">
+                                                    <rect key="frame" x="8" y="108" width="284" height="184"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <string key="text">- Hãy gửi cho chúng tôi những câu chuyện hay để cùng gây dựng niềm tin.
+ktpm11520669@gmail.com</string>
+                                                    <fontDescription key="fontDescription" name="UVNDoiMoi" family="UVN Doi Moi" pointSize="25"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.83137254900000002" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="vnz-BT-m4a" firstAttribute="top" secondItem="hCV-AN-3jm" secondAttribute="top" id="0br-Cv-Ilk"/>
+                                                <constraint firstItem="vnz-BT-m4a" firstAttribute="leading" secondItem="hCV-AN-3jm" secondAttribute="leading" id="3dB-gb-FYl"/>
+                                                <constraint firstItem="vnz-BT-m4a" firstAttribute="height" secondItem="hCV-AN-3jm" secondAttribute="height" multiplier="1:3" id="ImX-Fa-8vf"/>
+                                                <constraint firstAttribute="width" constant="300" id="JQc-AY-VYI"/>
+                                                <constraint firstAttribute="height" constant="300" id="crA-dy-r8x"/>
+                                                <constraint firstAttribute="trailing" secondItem="vnz-BT-m4a" secondAttribute="trailing" id="eUA-lf-DBb"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="customRadius">
+                                                    <real key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7rx-bk-ea5" customClass="DesignableView" customModule="NiemTinCoDoc" customModuleProvider="target">
+                                            <rect key="frame" x="359" y="329.5" width="115" height="115"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="church" translatesAutoresizingMaskIntoConstraints="NO" id="oE2-Aw-0sh">
+                                                    <rect key="frame" x="18" y="17" width="80" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="2mN-dq-WFm"/>
+                                                        <constraint firstAttribute="width" constant="80" id="P2B-mr-5To"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.65098039215686276" green="0.93333333333333335" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="115" id="2ta-Bh-ncI"/>
+                                                <constraint firstAttribute="height" constant="115" id="ITK-yz-YIk"/>
+                                                <constraint firstItem="oE2-Aw-0sh" firstAttribute="centerY" secondItem="7rx-bk-ea5" secondAttribute="centerY" id="RME-VN-qDh"/>
+                                                <constraint firstItem="oE2-Aw-0sh" firstAttribute="centerX" secondItem="7rx-bk-ea5" secondAttribute="centerX" id="uIB-g4-gDZ"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="customRadius">
+                                                    <real key="value" value="49"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="lGq-XT-ssB" secondAttribute="trailing" id="1bo-QC-bSB"/>
+                                        <constraint firstItem="lGq-XT-ssB" firstAttribute="leading" secondItem="gOe-X5-F5V" secondAttribute="leading" id="9cV-VM-Kdy"/>
+                                        <constraint firstItem="vnz-BT-m4a" firstAttribute="top" secondItem="7rx-bk-ea5" secondAttribute="bottom" constant="-49" id="PJ8-6x-dns"/>
+                                        <constraint firstItem="7rx-bk-ea5" firstAttribute="centerX" secondItem="gOe-X5-F5V" secondAttribute="centerX" id="QPa-hF-iDC"/>
+                                        <constraint firstAttribute="bottom" secondItem="lGq-XT-ssB" secondAttribute="bottom" id="SrI-Mv-snW"/>
+                                        <constraint firstItem="hCV-AN-3jm" firstAttribute="centerY" secondItem="gOe-X5-F5V" secondAttribute="centerY" id="aw4-76-jMa"/>
+                                        <constraint firstItem="lGq-XT-ssB" firstAttribute="top" secondItem="gOe-X5-F5V" secondAttribute="top" id="kG4-3D-SGP"/>
+                                        <constraint firstItem="hCV-AN-3jm" firstAttribute="centerX" secondItem="gOe-X5-F5V" secondAttribute="centerX" id="lAO-W3-Sx6"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wri-ia-9Po" firstAttribute="bottom" secondItem="Olu-OW-HWy" secondAttribute="bottom" id="aan-Ky-6pU"/>
+                            <constraint firstItem="Wri-ia-9Po" firstAttribute="trailing" secondItem="Olu-OW-HWy" secondAttribute="trailing" id="mvn-jT-8V6"/>
+                            <constraint firstItem="Olu-OW-HWy" firstAttribute="top" secondItem="Wri-ia-9Po" secondAttribute="top" id="oOI-RF-JMl"/>
+                            <constraint firstItem="Olu-OW-HWy" firstAttribute="leading" secondItem="Wri-ia-9Po" secondAttribute="leading" id="sM0-xV-Taa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wri-ia-9Po"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SV3-Hw-EdT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="702" y="-639"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NiemTinCoDoc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FaithCross.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ipf-1Y-XAm">
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BuO-hC-ycB">
+                                <rect key="frame" x="0.0" y="20" width="834" height="278"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="NIỀM TIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6HB-tZ-Oqm">
+                                        <rect key="frame" x="10" y="40" width="814" height="122"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="79" id="KjC-Mc-LYt">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="90"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="UVNDoiMoi" family="UVN Doi Moi" pointSize="63"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="UVNDoiMoi" family="UVN Doi Moi" pointSize="82"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CƠ ĐỐC NHÂN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvS-NH-6H1">
+                                        <rect key="frame" x="10" y="161" width="814" height="78"/>
+                                        <fontDescription key="fontDescription" name="UVNDoiMoi" family="UVN Doi Moi" pointSize="35"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="UVNDoiMoi" family="UVN Doi Moi" pointSize="50"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="6HB-tZ-Oqm" firstAttribute="top" secondItem="BuO-hC-ycB" secondAttribute="top" constant="10" id="GOs-5i-GLF">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                    </constraint>
+                                    <constraint firstAttribute="trailing" secondItem="cvS-NH-6H1" secondAttribute="trailing" constant="10" id="I9E-4Y-RsN"/>
+                                    <constraint firstAttribute="trailing" secondItem="6HB-tZ-Oqm" secondAttribute="trailing" constant="10" id="LZY-nH-xOD">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                    </constraint>
+                                    <constraint firstItem="cvS-NH-6H1" firstAttribute="leading" secondItem="BuO-hC-ycB" secondAttribute="leading" constant="10" id="g0D-On-lVs"/>
+                                    <constraint firstItem="6HB-tZ-Oqm" firstAttribute="leading" secondItem="BuO-hC-ycB" secondAttribute="leading" constant="10" id="qys-GM-VX0"/>
+                                    <constraint firstItem="cvS-NH-6H1" firstAttribute="top" secondItem="6HB-tZ-Oqm" secondAttribute="bottom" constant="5" id="tYK-Qe-Otv">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                                    </constraint>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yu2-ki-BnF">
+                                <rect key="frame" x="694" y="972" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="2k9-Rp-fPU">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="70" id="ADZ-eb-BBz">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" image="MenuIcon_Expand.png"/>
+                                <connections>
+                                    <action selector="PressButtonMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mqc-gg-tkt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAp-Bh-xFj">
+                                <rect key="frame" x="534" y="812" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Fvp-I4-T0R">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="70" id="y9c-8n-W7h">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" image="ReadBook.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="PressReadStory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Knm-Hp-PPp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNs-1g-CAe">
+                                <rect key="frame" x="694" y="812" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="EPK-mZ-x2g">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="70" id="gbs-TP-gJy">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" image="InfoIcon.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="PressInfoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rl6-pa-qo0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88d-JG-Dcg">
+                                <rect key="frame" x="534" y="972" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Y9D-5J-CXJ">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="70" id="h8d-5M-n3h">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" image="FacebookIcon.png"/>
+                                <connections>
+                                    <action selector="PressShareFaceBook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P9e-BF-WDA"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BuO-hC-ycB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2vU-ee-fiN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yu2-ki-BnF" secondAttribute="trailing" constant="20" id="3EL-ox-9d8"/>
+                            <constraint firstItem="88d-JG-Dcg" firstAttribute="top" secondItem="VAp-Bh-xFj" secondAttribute="bottom" constant="40" id="4D6-i3-lAm"/>
+                            <constraint firstItem="Ipf-1Y-XAm" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="8bY-Qf-hab"/>
+                            <constraint firstItem="BuO-hC-ycB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IF2-tG-D9A"/>
+                            <constraint firstItem="Ipf-1Y-XAm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KUm-GO-C7y"/>
+                            <constraint firstItem="eNs-1g-CAe" firstAttribute="leading" secondItem="VAp-Bh-xFj" secondAttribute="trailing" constant="40" id="Qx7-DZ-LgE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="88d-JG-Dcg" secondAttribute="bottom" constant="20" id="YOk-V1-fo3"/>
+                            <constraint firstItem="Ipf-1Y-XAm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="byA-Em-EYi"/>
+                            <constraint firstItem="Yu2-ki-BnF" firstAttribute="top" secondItem="eNs-1g-CAe" secondAttribute="bottom" constant="40" id="cqg-NU-5F8"/>
+                            <constraint firstItem="Yu2-ki-BnF" firstAttribute="leading" secondItem="88d-JG-Dcg" secondAttribute="trailing" constant="40" id="d1h-CB-IBJ"/>
+                            <constraint firstItem="BuO-hC-ycB" firstAttribute="height" secondItem="Ipf-1Y-XAm" secondAttribute="height" multiplier="1:4" id="dfe-1E-dqX"/>
+                            <constraint firstItem="BuO-hC-ycB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fSu-B9-qdw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eNs-1g-CAe" secondAttribute="trailing" constant="20" id="kxJ-q2-EFk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Yu2-ki-BnF" secondAttribute="bottom" constant="20" id="qPQ-5Z-pur"/>
+                            <constraint firstItem="Ipf-1Y-XAm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tKF-jX-DfM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="HPg-ga-96v"/>
+                    <connections>
+                        <outlet property="btnFacebook" destination="88d-JG-Dcg" id="KaS-aO-8BS"/>
+                        <outlet property="btnInfo" destination="eNs-1g-CAe" id="Nav-az-40e"/>
+                        <outlet property="btnMenu" destination="Yu2-ki-BnF" id="Qwg-kS-IUS"/>
+                        <outlet property="btnStartReadStory" destination="VAp-Bh-xFj" id="MDk-sd-YsW"/>
+                        <outlet property="lblCoDocNhan" destination="cvS-NH-6H1" id="FGG-5D-i0M"/>
+                        <outlet property="lblNiemTin" destination="6HB-tZ-Oqm" id="8NM-Iu-os3"/>
+                        <segue destination="eAP-k4-emu" kind="show" identifier="SegueShowListStory" id="et5-5g-kYu"/>
+                        <segue destination="845-9C-vVG" kind="presentation" identifier="SegueShowPopInfo" modalPresentationStyle="overCurrentContext" id="wiD-ar-H3i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="485.61151079136692" y="109.53237410071942"/>
+        </scene>
+        <!--Table Faith Story Controller-->
+        <scene sceneID="n81-uh-LOu">
+            <objects>
+                <viewController id="T22-Gr-UHB" customClass="TableFaithStoryController" customModule="NiemTinCoDoc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6gi-XW-3tc">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GodBlood.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="R0U-Ho-0NT">
+                                <rect key="frame" x="0.0" y="64" width="834" height="1004"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jp2-lg-r8K">
+                                <rect key="frame" x="0.0" y="64" width="834" height="1004"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hUO-DG-f44">
+                                    <rect key="frame" x="0.0" y="0.0" width="834" height="1004"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5zM-Eo-Kd6">
+                                            <rect key="frame" x="0.0" y="0.0" width="834" height="1004"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="ude-7j-oY3">
+                                                <rect key="frame" x="0.0" y="0.0" width="834" height="1004"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="light"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="80l-p3-DLj">
+                                <rect key="frame" x="0.0" y="64" width="834" height="1004"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReuseCell" rowHeight="177" id="0xY-mb-ziJ" customClass="StoryTVCell" customModule="NiemTinCoDoc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="834" height="177"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0xY-mb-ziJ" id="dZW-U2-yvg">
+                                            <rect key="frame" x="0.0" y="0.0" width="834" height="177"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WEP-CG-a6u">
+                                                    <rect key="frame" x="8" y="8" width="818" height="160"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BibleImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="xgT-d1-8Zj">
+                                                            <rect key="frame" x="40" y="20" width="120" height="120"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="80" id="PIm-Ff-hi9">
+                                                                    <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                                                                </constraint>
+                                                                <constraint firstAttribute="height" constant="80" id="gKu-7d-aHG">
+                                                                    <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                                                                </constraint>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NIỀM TIN CƠ ĐỐC NHÂN" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0n-pu-vhB">
+                                                            <rect key="frame" x="200" y="63" width="598" height="35"/>
+                                                            <fontDescription key="fontDescription" name="UVNThangVu" family="UVN Thang Vu" pointSize="22"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="UVNThangVu" family="UVN Thang Vu" pointSize="30"/>
+                                                            </variation>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40073844178082191" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="v0n-pu-vhB" firstAttribute="centerY" secondItem="xgT-d1-8Zj" secondAttribute="centerY" id="1UA-5K-o0D"/>
+                                                        <constraint firstAttribute="trailing" secondItem="v0n-pu-vhB" secondAttribute="trailing" constant="20" id="P5r-gr-UkX"/>
+                                                        <constraint firstItem="xgT-d1-8Zj" firstAttribute="top" secondItem="WEP-CG-a6u" secondAttribute="top" constant="20" id="Ynx-pb-44b"/>
+                                                        <constraint firstItem="xgT-d1-8Zj" firstAttribute="centerY" secondItem="WEP-CG-a6u" secondAttribute="centerY" id="df8-VO-ib9"/>
+                                                        <constraint firstItem="v0n-pu-vhB" firstAttribute="leading" secondItem="xgT-d1-8Zj" secondAttribute="trailing" constant="10" id="gDY-1K-tEK">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                                        </constraint>
+                                                        <constraint firstItem="xgT-d1-8Zj" firstAttribute="leading" secondItem="WEP-CG-a6u" secondAttribute="leading" constant="20" id="uYw-J5-B43">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="bottom" secondItem="xgT-d1-8Zj" secondAttribute="bottom" constant="20" id="wsr-gM-efX"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="WEP-CG-a6u" secondAttribute="trailing" constant="8" id="9E2-vN-DHV"/>
+                                                <constraint firstAttribute="bottom" secondItem="WEP-CG-a6u" secondAttribute="bottom" constant="8" id="aC8-8H-zNJ"/>
+                                                <constraint firstItem="WEP-CG-a6u" firstAttribute="top" secondItem="dZW-U2-yvg" secondAttribute="top" constant="8" id="n0E-FX-CDc"/>
+                                                <constraint firstItem="WEP-CG-a6u" firstAttribute="leading" secondItem="dZW-U2-yvg" secondAttribute="leading" constant="8" id="y8m-IV-KrL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="imgIcon" destination="xgT-d1-8Zj" id="MCc-eg-jsL"/>
+                                            <outlet property="lblStoryName" destination="v0n-pu-vhB" id="KlZ-5M-KbJ"/>
+                                            <outlet property="viewInCell" destination="WEP-CG-a6u" id="HaL-uJ-qDb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jp2-lg-r8K" firstAttribute="top" secondItem="IJz-19-nyZ" secondAttribute="top" id="7iH-LP-cRR"/>
+                            <constraint firstItem="Jp2-lg-r8K" firstAttribute="leading" secondItem="IJz-19-nyZ" secondAttribute="leading" id="JmI-ra-VeL"/>
+                            <constraint firstItem="R0U-Ho-0NT" firstAttribute="top" secondItem="IJz-19-nyZ" secondAttribute="top" id="NmP-gA-2EA"/>
+                            <constraint firstItem="IJz-19-nyZ" firstAttribute="bottom" secondItem="R0U-Ho-0NT" secondAttribute="bottom" id="STQ-CI-J0W"/>
+                            <constraint firstItem="IJz-19-nyZ" firstAttribute="trailing" secondItem="80l-p3-DLj" secondAttribute="trailing" id="SjB-e5-sgX"/>
+                            <constraint firstItem="IJz-19-nyZ" firstAttribute="trailing" secondItem="R0U-Ho-0NT" secondAttribute="trailing" id="To6-1T-g7v"/>
+                            <constraint firstItem="80l-p3-DLj" firstAttribute="top" secondItem="IJz-19-nyZ" secondAttribute="top" id="WqE-3i-sIM"/>
+                            <constraint firstItem="IJz-19-nyZ" firstAttribute="bottom" secondItem="Jp2-lg-r8K" secondAttribute="bottom" id="YfX-60-sFS"/>
+                            <constraint firstItem="80l-p3-DLj" firstAttribute="leading" secondItem="IJz-19-nyZ" secondAttribute="leading" id="cxq-kG-ugc"/>
+                            <constraint firstItem="IJz-19-nyZ" firstAttribute="trailing" secondItem="Jp2-lg-r8K" secondAttribute="trailing" id="fNy-Ar-zha"/>
+                            <constraint firstItem="IJz-19-nyZ" firstAttribute="bottom" secondItem="80l-p3-DLj" secondAttribute="bottom" id="oHy-jJ-fAh"/>
+                            <constraint firstItem="R0U-Ho-0NT" firstAttribute="leading" secondItem="IJz-19-nyZ" secondAttribute="leading" id="u7c-X6-ad2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IJz-19-nyZ"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="GfI-Y0-B6d">
+                        <barButtonItem key="leftBarButtonItem" title="Trở lại" id="bMO-b8-KUR"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="ETJ-Me-qTd" id="i0d-He-51R"/>
+                        <outlet property="tblStory" destination="80l-p3-DLj" id="TXA-oj-86o"/>
+                        <outlet property="visualEffect" destination="Jp2-lg-r8K" id="w7v-sK-A1J"/>
+                        <segue destination="q2L-Ux-ldk" kind="show" identifier="SegueShowContent" id="7P9-gm-agS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mqv-z2-lYe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="ETJ-Me-qTd">
+                    <connections>
+                        <outlet property="delegate" destination="T22-Gr-UHB" id="xey-qb-fUY"/>
+                        <outlet property="searchContentsController" destination="T22-Gr-UHB" id="J2F-aS-Uuu"/>
+                        <outlet property="searchResultsDataSource" destination="T22-Gr-UHB" id="iHV-n6-lkO"/>
+                        <outlet property="searchResultsDelegate" destination="T22-Gr-UHB" id="SvS-0t-vMO"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="2272.65625" y="103.7109375"/>
+        </scene>
+        <!--Faith Story Content Controller-->
+        <scene sceneID="4MZ-LB-6Rz">
+            <objects>
+                <viewController id="q2L-Ux-ldk" customClass="FaithStoryContentController" customModule="NiemTinCoDoc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TGL-ca-CVk">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JesusLive.png" translatesAutoresizingMaskIntoConstraints="NO" id="sSi-7i-Klf">
+                                <rect key="frame" x="0.0" y="64" width="834" height="1004"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HXv-bi-fua">
+                                <rect key="frame" x="20" y="84" width="794" height="961"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfO-SZ-qy8">
+                                        <rect key="frame" x="18" y="18" width="758" height="925"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">Hai bác sĩ Mukherjee và Hodgen của Viện Bảo Vệ Thiếu Nhi Quốc Gia có cho đăng vào tạp chí khoa học một bài khảo cứu về ảnh hưởng của rượu đối với bào thai và kêu gọi các phụ nữ đang có thai phải tuyệt đối kiêng cữ rượu trong suốt thời kỳ mang thai. Bác sĩ Brandt của Viện Khoa học Quốc gia cũng vừa đưa ra một lời kêu gọi tương tự, vì theo các cuộc khảo cứu khoa học do mấy cơ quan Y tế của chính phủ liên bang Hoa kỳ thực hiện, thì rượu do người mẹ uống có thể gây cho đứa con còn là bào thai sẽ đần độn sau này. 
+Vì không thể dùng con người để thí nghiệm, nên các nhà bác học đã thí nghiệm 5 con khỉ có thai. Cứ mỗi khi họ chích vào máu khỉ một dung dịch có chất rượu thì mạch máu trong cuống rún bị tấc nghẽn. Cuống rún là khúc ruột nối liền cái rún của bào thai với lá nhau và là đường dây tiếp tế dường khí cùng các chất dinh dưỡng để nuôi bào thai. Khi các mạch máu trong cuống rún bị nghẹt, óc của bào thai thiếu dưỡng khí và có thể bị hư hỏng không thể nào chữa được. 
+Bác sĩ Mukherjee tuyên bố rằng cuộc khảo cứu này thực hiện với loài khỉ, nhưng ảnh hưởng của rượu đối với bào thai của người cũng tương tự và thống kê cho thấy nhiều bà mẹ ghiền rượu đã sinh con bị bệnh thần kinh hay đần độn suốt đời. 
+Cha mẹ ghiền rượu di truyền hậu quả tai hại cho con cái là thực sự ai cũng đã thấy, nhưng có một thực sự khác một số người không chịu chấp nhận là cha mẹ, tổ tiên di truyền tội lỗi và sự chết cho con cái của Đa-vít, là tác giả của nhiều áng thơ trong sách Thi thiên có nói rằng:" Tôi đã sinh ra trong gian ác, mẹ tôi đã hoài thai tôi trong tội lỗi" (Thi 51.5). Thư Rôma trong Tân ước cũng chép ràng. "Vì Ađam, tội lỗi đã xâm nhập thế gian đem theo sự chết. Do đó mọi người đều phải chết vì mọi người đều đã phạm tội" (Rô 5.12). Mặc dù khi mẹ sinh ra, chúng ta không có quyền chọn lựa, nhưng Đấng Tạo Hóa đang cho chúng ta quyền lựa chọn giữa sự sống vĩnh viễn và sự chết vĩnh viễn, giữa ân phúc khoan hồng của Đấng Tạo Hoá và việc khước từ ơn phước đó đế lãnh án phạt đời đời. Vậy, hãy tiếp nhận Chúa Cứu Thế để được sạch tội và được sống vĩnh viễn ở nước Trời với Đấng Tạo Hóa yêu thương. (ĐTPA). 
+</string>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="UVNDoiMoi" family="UVN Doi Moi" pointSize="28"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="UVNDoiMoi" family="UVN Doi Moi" pointSize="38"/>
+                                        </variation>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.50837435787671237" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottomMargin" secondItem="zfO-SZ-qy8" secondAttribute="bottom" constant="10" id="4DF-Go-PCA"/>
+                                    <constraint firstItem="zfO-SZ-qy8" firstAttribute="top" secondItem="HXv-bi-fua" secondAttribute="topMargin" constant="10" id="GD1-6p-TCL"/>
+                                    <constraint firstItem="zfO-SZ-qy8" firstAttribute="leading" secondItem="HXv-bi-fua" secondAttribute="leadingMargin" constant="10" id="PLU-AE-sPA"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="zfO-SZ-qy8" secondAttribute="trailing" constant="10" id="x2P-GY-ksp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sSi-7i-Klf" firstAttribute="top" secondItem="fbm-er-43x" secondAttribute="top" id="5eA-br-U4b"/>
+                            <constraint firstItem="fbm-er-43x" firstAttribute="bottom" secondItem="sSi-7i-Klf" secondAttribute="bottom" id="8hw-gg-oZr"/>
+                            <constraint firstItem="HXv-bi-fua" firstAttribute="top" secondItem="fbm-er-43x" secondAttribute="top" constant="20" id="BZt-zD-AKG"/>
+                            <constraint firstItem="sSi-7i-Klf" firstAttribute="leading" secondItem="fbm-er-43x" secondAttribute="leading" id="Gng-tV-Yj1"/>
+                            <constraint firstItem="fbm-er-43x" firstAttribute="bottom" secondItem="HXv-bi-fua" secondAttribute="bottom" constant="23" id="NTo-fN-WQN"/>
+                            <constraint firstItem="HXv-bi-fua" firstAttribute="leading" secondItem="fbm-er-43x" secondAttribute="leading" constant="20" id="hIF-0P-Bu3"/>
+                            <constraint firstItem="fbm-er-43x" firstAttribute="trailing" secondItem="sSi-7i-Klf" secondAttribute="trailing" id="nbX-Uh-CYF"/>
+                            <constraint firstItem="fbm-er-43x" firstAttribute="trailing" secondItem="HXv-bi-fua" secondAttribute="trailing" constant="20" id="nze-0G-FoV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fbm-er-43x"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Tkj-6H-5fs">
+                        <barButtonItem key="backBarButtonItem" title="Trở lại" id="YNu-zJ-h2z"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="txtContent" destination="zfO-SZ-qy8" id="6OU-do-mEx"/>
+                        <outlet property="viewContent" destination="HXv-bi-fua" id="S5g-YP-XLS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bz8-k7-4dd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3080.8000000000002" y="103.89805097451276"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ycj-YM-SSo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eAP-k4-emu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8nV-3M-Ogb">
+                        <rect key="frame" x="0.0" y="20" width="834" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="0.12396243936536044" blue="0.037528643342434109" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="0.1239624394" blue="0.037528643340000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="T22-Gr-UHB" kind="relationship" relationship="rootViewController" id="Sa5-en-zTj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pxB-P1-vWf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1471.2" y="110.19490254872565"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BibleImage.png" width="256" height="256"/>
+        <image name="FacebookIcon.png" width="256" height="256"/>
+        <image name="FaithCross.jpg" width="552" height="828"/>
+        <image name="GodBlood.jpg" width="427" height="640"/>
+        <image name="InfoIcon.png" width="256" height="256"/>
+        <image name="JesusLive.png" width="346" height="699"/>
+        <image name="MenuIcon_Expand.png" width="128" height="128"/>
+        <image name="ReadBook.png" width="128" height="128"/>
+        <image name="church" width="256" height="256"/>
+    </resources>
 </document>
